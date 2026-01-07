@@ -1,5 +1,5 @@
 "use client"
-
+import Image from "next/image"
 import {
   Plane,
   Train,
@@ -87,49 +87,55 @@ export default function HomePage() {
             HERO SECTION
         ---------------------------------------------------- */}
         <section
-          id="hero"
-          className="relative min-h-screen flex items-center justify-center overflow-hidden"
-        >
-          <div className="absolute inset-0 overflow-hidden">
-            <img
-              src="/newHeroBannerPhoto.webp"
-              alt="MTathagat Luxury Residences"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-white/10 to-white/30" />
-          </div>
+  id="hero"
+  className="relative min-h-screen flex items-center justify-center overflow-hidden"
+>
+  {/* Background Image */}
+  <div className="absolute inset-0">
+    <Image
+      src="/newHeroBannerPhoto.webp"
+      alt="MTathagat Luxury Residences"
+      fill
+      priority
+      quality={75}
+      sizes="100vw"
+      placeholder="blur"
+      blurDataURL="data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoIAAgAAkA4JZwCdAD0+QAA"
+      className="object-cover"
+    />
 
-          <div className="container-85 mx-auto px-6 z-10 text-center py-32">
-            <div className="max-w-5xl mx-auto space-y-8">
-              <p className="text-sm md:text-base text-foreground/70 tracking-[0.3em] font-light uppercase animate-fade-in-down">
-                Crafted for the Exceptional
-              </p>
+    <div className="absolute inset-0 bg-gradient-to-b from-white/20 via-white/10 to-white/30" />
+  </div>
 
-              <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-foreground leading-[0.95] tracking-tight animate-fade-in-up">
-                Boutique Styled Homes
-              </h1>
+  {/* Content */}
+  <div className="container-85 mx-auto px-6 z-10 text-center py-32">
+    <div className="max-w-5xl mx-auto space-y-8">
+      <p className="text-sm md:text-base text-foreground/70 tracking-[0.3em] font-light uppercase animate-fade-in-down">
+        Crafted for the Exceptional
+      </p>
 
-              <div
-                className="space-y-2 animate-fade-in-up"
-                style={{ animationDelay: "0.2s" }}
-              >
-                <p className="text-base md:text-lg text-foreground/80 tracking-[0.2em] uppercase font-light">
-                 for a Distinguished Lifestyle
-                </p>
-                <p className="text-sm md:text-base text-foreground/70 tracking-[0.15em] uppercase font-light">
-                  At Patel Nagar, Patna, Bihar
-                </p>
-              </div>
-            </div>
-          </div>
+      <h1 className="font-serif text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-foreground leading-[0.95] tracking-tight animate-fade-in-up">
+        Boutique Styled Homes
+      </h1>
 
-          <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
-            <div className="w-6 h-10 border-2 border-foreground/30 rounded-full flex items-start justify-center p-1.5">
-              <div className="w-1.5 h-3 bg-foreground/50 rounded-full animate-pulse-slow" />
-            </div>
-          </div>
-        </section>
+      <div className="space-y-2 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+        <p className="text-base md:text-lg text-foreground/80 tracking-[0.2em] uppercase font-light">
+          for a Distinguished Lifestyle
+        </p>
+        <p className="text-sm md:text-base text-foreground/70 tracking-[0.15em] uppercase font-light">
+          At Patel Nagar, Patna, Bihar
+        </p>
+      </div>
+    </div>
+  </div>
 
+  {/* Scroll Indicator */}
+  <div className="absolute bottom-12 left-1/2 -translate-x-1/2 animate-bounce">
+    <div className="w-6 h-10 border-2 border-foreground/30 rounded-full flex items-start justify-center p-1.5">
+      <div className="w-1.5 h-3 bg-foreground/50 rounded-full animate-pulse-slow" />
+    </div>
+  </div>
+</section>
         {/* ---------------------------------------------------
             OVERVIEW SECTION
         ---------------------------------------------------- */}
