@@ -288,7 +288,7 @@ export default function HomePage() {
               {[
                 "https://www.appliedvastu.com/userfiles/clix_applied_vastu/images/Vastu%20for%20Home_House%20Vastu_Vastu%20Tips%20House.JPG",
                 "https://th.bing.com/th/id/R.7f97aa434d5509366f31709bb80f2ade?rik=a%2fAQYcAuuEGV2g&riu=http%3a%2f%2fredastrologer.com%2fwp-content%2fuploads%2f2020%2f07%2fvastu-theme.jpg&ehk=1xN0XH6osmJWXd1x2jmBmtyuWay%2f%2fYtS4h0sYCGwUuQ%3d&risl=&pid=ImgRaw&r=0",
-                "https://monicawadkar.com/wp-content/uploads/2024/04/vastushatra-3.jpg",
+                "https://tse1.mm.bing.net/th/id/OIP.D3zibGnaGHQQF6YHKSnUfQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3",
                 "https://www.nobroker.in/blog/wp-content/uploads/2023/12/vastu-shastra-for-flats-and-apartments.jpg",
               ].map((img, index) => (
                 <div key={index} className="relative h-64 rounded-lg overflow-hidden group">
