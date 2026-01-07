@@ -92,7 +92,7 @@ export default function HomePage() {
         >
           <div className="absolute inset-0 overflow-hidden">
             <img
-              src="/newHeroBannerPhoto.jpg"
+              src="/newHeroBannerPhoto.webp"
               alt="MTathagat Luxury Residences"
               className="w-full h-full object-cover"
             />
