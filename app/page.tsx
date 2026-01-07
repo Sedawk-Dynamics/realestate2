@@ -93,7 +93,7 @@ export default function HomePage() {
   {/* Background Image */}
   <div className="absolute inset-0">
     <Image
-      src="/newHeroBannerPhoto.webp"
+      src="/newHeroBannerPhoto1.webp"
       alt="MTathagat Luxury Residences"
       fill
       priority
